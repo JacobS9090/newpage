@@ -484,12 +484,13 @@ addButton.addEventListener("click", addToDoItem );
 function addToDoItem() {
   alert("Add button clicked!");
 }
-var clearButton = document.getElementById("clear-completed-button")
+var clearButton = document.getElementById("clear-completed-button");
 clearButton.addEventListener("click", clearCompletedToDoItems);
 function clearCompletedToDoItems() {
   alert("Items cleared")
 }
-var emptyButton = document.getElementById("empty-button")
+    setInterval(savelist, 1000)
+var emptyButton = document.getElementById("empty-button");
 emptyButton.addEventListener("click", emptylist );
 function emptylist() {
     var toDoItems = toDoList.children;
@@ -498,7 +499,8 @@ function emptylist() {
     }
   alert("list emptied");
 }
-var saveButton = document.getElementById("save-button")
+        setInterval(savelist, 1000)
+var saveButton = document.getElementById("save-button");
 saveButton.addEventListener("click", save );
 function save() {
    var toDos = [];
@@ -519,6 +521,7 @@ function save() {
 
   alert("list saved");
 }
+        setInterval(savelist, 1000)
 var toDoEntryBox = document.getElementById("todo-entry-box");
 var toDoList = document.getElementById("todo-list");
 function newToDoItem(itemText, completed) {
